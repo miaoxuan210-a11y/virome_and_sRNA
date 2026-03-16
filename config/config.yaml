@@ -1,0 +1,20 @@
+# Project configuration for virome + sRNA Snakemake workflow
+samples:
+  - sample1
+
+raw_dir: data/raw
+results_dir: results
+
+threads:
+  fastp: 2
+  bowtie2: 2
+  srna: 1
+  viral: 1
+  report: 1
+
+# Host removal
+host_index_prefix: refs/host/bowtie2_index/host
+
+# Optional reference metadata for annotation scripts
+viral_reference_fasta: refs/viral/viral_reference.fa
+srna_reference: refs/srna/srna_reference.fa
