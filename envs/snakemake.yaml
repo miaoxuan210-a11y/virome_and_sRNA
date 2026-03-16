@@ -1,0 +1,13 @@
+name: virome_srna
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - snakemake-minimal=8.10
+  - python=3.11
+  - fastp
+  - bowtie2
+  - blast
+  - interproscan
+  - spades
+  - trinity

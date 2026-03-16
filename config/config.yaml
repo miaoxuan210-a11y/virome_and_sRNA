@@ -1,0 +1,23 @@
+project: virome_and_sRNA
+
+samples:
+  S01:
+    raw_fastq: data/raw/S01.fastq.gz
+  S02:
+    raw_fastq: data/raw/S02.fastq.gz
+
+threads:
+  preprocess: 4
+  srna: 4
+  viral: 8
+
+adapters:
+  srna_adapter: TGGAATTCTCGGGTGCCAAGG
+
+references:
+  host_bowtie_index: refs/host/host_index
+  viral_reference_fasta: refs/viral/known_viral_sequences.fa
+  blast_viral_db: refs/viral/blast_db/viral_nt
+
+design:
+  group_table: metadata/groups.tsv

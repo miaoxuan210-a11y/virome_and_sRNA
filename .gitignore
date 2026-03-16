@@ -1,0 +1,7 @@
+# Python cache artifacts
+__pycache__/
+*.pyc
+
+# Raw sequencing input files should not be versioned
+data/raw/*.fastq.gz
+data/raw/*.fq.gz
